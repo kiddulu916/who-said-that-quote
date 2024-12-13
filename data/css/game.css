@@ -1,0 +1,223 @@
+/* Global Styles */
+body {
+    background-color: #00b609;
+    font-family: Arial, sans-serif;
+    font-size: 1rem; /* Use a base font size for consistency */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+    margin-top: 2em;
+}
+
+/* Timer and Score Section */
+#timer-score {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-bottom: 0.5em;
+    padding-top: 7em;
+    color: white;
+    font-weight: bold;
+}
+
+.timer, .score {
+    font-size: 3em; /* Using rem for better scalability */
+    margin: 0;
+}
+
+.score {
+    margin-right: 0.25em;
+}
+
+/* Quote Section */
+#quote-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-wrap: normal;
+    width: 85%;
+    height: 6em;
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+    background-color: #009cf0;
+    border: 0.2em solid #00649a;
+    border-radius: 2em;
+    color: white;
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Answer Buttons Section */
+#answer-buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+    width: 85%;
+}
+
+button {
+    padding: 0.5em;
+    font-size: 3rem; /* Adjusted for consistency */
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #009cf0;
+    border: 0.2em solid #00649a;
+    border-radius: 1.25em;
+    height: 3em;
+    transition: background-color 0.3s, box-shadow 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: #16aeff;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+    background-color: #1aafff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Game Over Section */
+
+#game-over-btns {
+    display: none;
+    flex-direction: row;
+    align-items: center;
+}
+
+.game-over button {
+    opacity: 0;  /* Start with hidden buttons */
+    transition: opacity 0.3s ease; /* Smooth opacity transition */
+}
+
+#try-again {
+    background-color: #00b609;
+    border: 0.2em solid #007814;
+    box-shadow: 0 4px 12px rgba(4, 251, 189, 0.516);
+    width: auto;
+    height: auto;
+    margin: 0.5em;
+    padding: 0.5em;
+    font-size: 3vw;
+    font-weight: bold;
+}
+
+#try-again:hover {
+    background-color: #00ff95;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+#try-again:active {
+    background-color: #01d120;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#new-category {
+    background-color: #00b609;
+    border: 0.2em solid #007814;
+    box-shadow: 0 4px 12px rgba(4, 251, 189, 0.516);
+    width: auto;
+    height: auto;
+    margin: 0.5em;
+    padding: 0.5em;
+    font-size: 3vw;
+    font-weight: bold;
+}
+
+#new-category:hover {
+    background-color: #00ff95;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+#new-category:active {
+    background-color: #01d120;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Media Queries */
+
+/* For mobile screens (max-width: 600px) */
+@media (max-width: 600px) {
+    #timer-score {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .timer, .score {
+        font-size: 1em; /* Reduced for mobile */
+    }
+
+    #quote-section {
+        width: 80%;
+        font-size: 1em; /* Adjusted for smaller screens */
+        border: 0.2em solid #00649a;
+        height: auto;
+        overflow-wrap: normal;
+        margin: 0.5em;
+        padding: 0.5em;
+    }
+
+    button {
+        font-size: 1em; /* Increased for mobile */
+        height: auto;
+    }
+
+    /* Stack answer buttons vertically on mobile */
+    #answer-buttons {
+        grid-template-columns: 1fr; /* Single column */
+        width: 90%;
+    }
+
+    #game-over-btns {
+        flex-direction: column;
+    }
+
+    #try-again, #new-category {
+        margin: 0.5em;
+        padding: 0.5em;
+        font-size: 1em;
+        height: auto;
+        width: auto;
+        opacity: 1;  /* Show buttons on game over */
+        border: 0.2em solid #007814;
+    }
+}
+
+/* For tablet screens (600px to 1024px) */
+@media (min-width: 600px) and (max-width: 1024px) {
+    #quote {
+        width: 85%;
+        font-size: 1.3rem; /* Adjusted for tablet */
+    }
+
+    .timer, .score {
+        font-size: 2rem; /* Larger font for tablet */
+    }
+
+    button {
+        font-size: 1.4rem; /* Slightly larger button text */
+        height: 6em;
+        width: 100%;
+    }
+
+    #answer-buttons {
+        grid-template-columns: 1fr 1fr; /* Two columns for tablet */
+        gap: 0.5em;
+    }
+}

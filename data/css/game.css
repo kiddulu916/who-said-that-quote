@@ -29,7 +29,7 @@ body {
 }
 
 .timer, .score {
-    font-size: 3em; /* Using rem for better scalability */
+    font-size: 2em; /* Using rem for better scalability */
     margin: 0;
 }
 
@@ -51,7 +51,7 @@ body {
     border: 0.2em solid #00649a;
     border-radius: 2em;
     color: white;
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: bold;
     text-align: center;
 }
@@ -66,7 +66,7 @@ body {
 
 button {
     padding: 0.5em;
-    font-size: 3rem; /* Adjusted for consistency */
+    font-size: 2rem; /* Adjusted for consistency */
     justify-content: center;
     align-items: center;
     color: #fff;
@@ -112,7 +112,7 @@ button:active {
     height: auto;
     margin: 0.5em;
     padding: 0.5em;
-    font-size: 3vw;
+    font-size: 2vw;
     font-weight: bold;
 }
 
@@ -135,7 +135,7 @@ button:active {
     height: auto;
     margin: 0.5em;
     padding: 0.5em;
-    font-size: 3vw;
+    font-size: 2vw;
     font-weight: bold;
 }
 
@@ -160,12 +160,12 @@ button:active {
     }
 
     .timer, .score {
-        font-size: 1em; /* Reduced for mobile */
+        font-size: 0.5em; /* Reduced for mobile */
     }
 
     #quote-section {
         width: 80%;
-        font-size: 1em; /* Adjusted for smaller screens */
+        font-size: 0.5em; /* Adjusted for smaller screens */
         border: 0.2em solid #00649a;
         height: auto;
         overflow-wrap: normal;
@@ -174,7 +174,7 @@ button:active {
     }
 
     button {
-        font-size: 1em; /* Increased for mobile */
+        font-size: 0.5em; /* Increased for mobile */
         height: auto;
     }
 
@@ -191,7 +191,7 @@ button:active {
     #try-again, #new-category {
         margin: 0.5em;
         padding: 0.5em;
-        font-size: 1em;
+        font-size: 0.5em;
         height: auto;
         width: auto;
         opacity: 1;  /* Show buttons on game over */
@@ -203,15 +203,15 @@ button:active {
 @media (min-width: 600px) and (max-width: 1024px) {
     #quote {
         width: 85%;
-        font-size: 1.3rem; /* Adjusted for tablet */
+        font-size: 1rem; /* Adjusted for tablet */
     }
 
     .timer, .score {
-        font-size: 2rem; /* Larger font for tablet */
+        font-size: 1rem; /* Larger font for tablet */
     }
 
     button {
-        font-size: 1.4rem; /* Slightly larger button text */
+        font-size: 1rem; /* Slightly larger button text */
         height: 6em;
         width: 100%;
     }
